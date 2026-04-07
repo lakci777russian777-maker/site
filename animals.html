@@ -1,92 +1,63 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Животные в космосе: Герои до Гагарина</title>
+    <title>Животные в космосе: Герои до человека</title>
     <style>
         body { margin: 0; font-family: 'Segoe UI', sans-serif; background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%); color: #e0e0e0; line-height: 1.6; }
         .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
-        h1, h2 { color: #00d4ff; border-bottom: 2px solid #00d4ff; padding-bottom: 10px; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: #ffcc00; text-decoration: none; font-weight: bold; transition: 0.3s; }
-        .back-link:hover { color: #fff; }
-        
-        /* Стили карточек животных */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 30px 0; }
-        .card { background: rgba(255,255,255,0.05); border-radius: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; }
-        .card-img { height: 180px; background: #222; background-size: cover; background-position: center; }
-        .card-content { padding: 20px; flex-grow: 1; }
-        .card-title { color: #ffcc00; font-size: 1.2rem; display: block; margin-bottom: 10px; font-weight: bold; border-left: 3px solid #ffcc00; padding-left: 10px; }
-        .card-text { font-size: 0.95rem; color: #ccc; text-align: justify; }
-
-        /* Стили Хаба */
-        .hub-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
-        .hub-card { background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); text-align: center; transition: 0.3s; text-decoration: none; color: inherit; display: block; }
-        .hub-card:hover { background: rgba(255, 255, 255, 0.1); border-color: #00d4ff; transform: translateY(-5px); }
-        .current { border-color: #ffcc00; background: rgba(255, 204, 0, 0.05); cursor: default; }
+        h1, h2 { color: #ffcc00; border-bottom: 2px solid #ffcc00; padding-bottom: 10px; }
+        .info-section { background: rgba(255,255,255,0.05); padding: 25px; border-radius: 15px; margin: 25px 0; border-left: 5px solid #ffcc00; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
+        .card { background: rgba(255,255,255,0.08); border-radius: 12px; padding: 20px; border: 1px solid rgba(255,255,255,0.1); }
+        .card b { color: #ffcc00; font-size: 1.2rem; display: block; margin-bottom: 10px; }
+        .hub-link { text-decoration: none; color: white; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; border: 1px solid rgba(0,212,255,0.3); text-align: center; transition: 0.3s; display: block; }
+        .hub-link:hover { background: rgba(0,212,255,0.1); transform: translateY(-3px); }
     </style>
 </head>
 <body>
 <div class="container">
-    <a href="index.html" class="back-link">← Назад к главной статье</a>
+    <a href="index.html" style="color:#00d4ff; text-decoration:none; font-weight:bold;">← На главную</a>
+    <h1>Животные-космонавты: Первопроходцы Вселенной</h1>
     
-    <h1>Животные-космонавты</h1>
-    <p>Прежде чем отправить в неизвестность человека, ученым нужно было убедиться, что живой организм способен выдержать перегрузки и состояние невесомости. Эти животные стали настоящими первооткрывателями Вселенной.</p>
+    <div class="info-section">
+        <h2>Зачем животные летали в космос?</h2>
+        <p>В середине XX века ученые не знали, сможет ли живой организм выдержать космический старт и, самое главное, длительную невесомость. Были опасения, что в отсутствие гравитации сердце не сможет качать кровь, а психика не выдержит изоляции. Чтобы ответить на эти вопросы, дорогу людям проложили четвероногие и пернатые герои.</p>
+    </div>
 
     <div class="grid">
-        <!-- Лайка -->
         <div class="card">
-            <div class="card-img" style="background-image: url('https://avatars.mds.yandex.net/i?id=1bfaafb01b6b6d23366e53f749cbe422a3633190-16507317-images-thumbs&n=13')"></div>
-            <div class="card-content">
-                <span class="card-title">Собака Лайка</span>
-                <p class="card-text">3 ноября 1957 года Лайка стала первым живым существом, вышедшим на орбиту Земли. Хотя её возвращение не планировалось из-за технологий того времени, её полёт доказал: живое существо может пережить старт ракеты и долгое время находиться в невесомости. Её подвиг открыл дорогу всем последующим космонавтам.</p>
-            </div>
+            <b>Лайка (1957)</b>
+            Обычная дворняжка стала первым существом, вышедшим на орбиту Земли на корабле «Спутник-2». Её полет доказал, что живой организм может пережить запуск. Хотя в те годы технологии не позволяли вернуть корабль, подвиг Лайки навсегда вошел в историю как важнейший шаг к полету человека.
         </div>
-
-        <!-- Мисс Бейкер -->
         <div class="card">
-            <div class="card-img" style="background-image: url('https://avatars.mds.yandex.net/i?id=9e65d81e446f71072ae08b6db2a650f91fe11d5a-11959565-images-thumbs&n=13')"></div>
-            <div class="card-content">
-                <span class="card-title">Мисс Бейкер</span>
-                <p class="card-text">Маленькая беличья обезьянка в 1959 году совершила полёт на ракете «Юпитер». Она поднялась на высоту 480 километров и успешно вернулась на Землю. После своего путешествия Мисс Бейкер стала настоящей знаменитостью и прожила долгую жизнь, став символом успеха первых биологических экспериментов в космосе.</p>
-            </div>
+            <b>Мисс Бейкер (1959)</b>
+            Беличья обезьянка, совершившая суборбитальный полет на ракете «Юпитер». Она поднялась на высоту 480 км и стала одной из первых, кто успешно вернулся на Землю. После полета она прожила долгую жизнь, став живым доказательством безопасности космических путешествий.
         </div>
-
-        <!-- Фелисетт -->
         <div class="card">
-            <div class="card-img" style="background-image: url('https://avatars.mds.yandex.net/get-entity_search/5107294/1247631528/SUx182_2x')"></div>
-            <div class="card-content">
-                <span class="card-title">Кошка Фелисетт</span>
-                <p class="card-text">В 1963 году Франция отправила в космос кошку по имени Фелисетт. Её полёт длился всего 15 минут, но за это время она поднялась на 156 километров. Фелисетт стала единственной в мире кошкой, официально признанной астронавтом. Ученые внимательно изучали работу её мозга во время невесомости, что помогло медицине.</p>
-            </div>
+            <b>Фелисетт (1963)</b>
+            Французская «астрокошка». Ученые вживили в её мозг электроды, чтобы детально изучить работу нервной системы в невесомости. Фелисетт успешно перенесла полет и мягко приземлилась на парашюте, став единственной кошкой, официально побывавшей в космосе.
         </div>
-
-        <!-- Черепахи -->
         <div class="card">
-            <div class="card-img" style="background-image: url('https://avatars.mds.yandex.net/i?id=78dbcaafe26ce948ae7d3335f519dfed8aefb676-11462831-images-thumbs&n=13')"></div>
-            <div class="card-content">
-                <span class="card-title">Черепахи Зонда-5</span>
-                <p class="card-text">Мало кто знает, но именно среднеазиатские черепахи стали первыми животными, совершившими путешествие вокруг Луны. В 1968 году на советском корабле «Зонд-5» они преодолели огромное расстояние, выдержали космическую радиацию и благополучно приводнились в Индийском океане, потеряв в весе всего 10%.</p>
-            </div>
+            <b>Черепахи Зонда-5 (1968)</b>
+            Именно среднеазиатские черепахи стали первыми животными, которые облетели вокруг Луны. На советском аппарате «Зонд-5» они преодолели путь к спутнику Земли и обратно, благополучно приводнившись в Индийском океане. По возвращении они были активны и здоровы.
         </div>
     </div>
 
-    <!-- ХАБ ДЛЯ ПЕРЕХОДА -->
-    <h2 style="text-align: center; border: none; margin-top: 60px;">Продолжить исследование</h2>
-    <div class="hub-grid">
-        <a href="index.html" class="hub-card">
-            <h3 style="color: #00d4ff;">Юрий Гагарин</h3>
-            <p style="font-size: 0.8rem;">Первый человек в космосе.</p>
-        </a>
-        <div class="hub-card current">
-            <h3 style="color: #ffcc00;">Животные-герои</h3>
-            <p style="font-size: 0.8rem;">Вы читаете эту статью.</p>
+    <!-- ХАБ НАВИГАЦИИ -->
+    <section style="margin-top: 80px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1);">
+        <h2 style="text-align: center; border: none; margin-bottom: 30px; color: #00d4ff;">Навигация по проекту</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+            <a href="index.html" class="hub-link"><b>Юрий Гагарин</b><br><small>Первый полет</small></a>
+            <a href="animals.html" class="hub-link" style="background: rgba(255,204,0,0.1); border-color: #ffcc00;"><b>Животные-герои</b><br><small>Вы здесь</small></a>
+            <a href="korolev.html" class="hub-link"><b>С. П. Королёв</b><br><small>Конструктор</small></a>
+            <a href="tereshkova.html" class="hub-link"><b>В. Терешкова</b><br><small>Первая женщина</small></a>
+            <a href="leonov.html" class="hub-link"><b>Алексей Леонов</b><br><small>Выход в космос</small></a>
+            <a href="mks.html" class="hub-link"><b>Станция МКС</b><br><small>Жизнь на орбите</small></a>
         </div>
-        <a href="korolev.html" class="hub-card">
-            <h3 style="color: #00d4ff;">С. П. Королёв</h3>
-            <p style="font-size: 0.8rem;">Гений инженерной мысли.</p>
-        </a>
-    </div>
+    </section>
 </div>
 </body>
 </html>
+
