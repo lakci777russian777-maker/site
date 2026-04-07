@@ -1,5 +1,6 @@
 <!-- Добавь это в начало блока body в файле animals.html -->
 <a href="index.html" style="display: inline-block; padding: 10px 20px; color: #00d4ff; text-decoration: none; border: 1px solid #00d4ff; border-radius: 5px; margin: 20px;">← Назад к Гагарину</a>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -59,47 +60,53 @@
     </style>
 </head>
 <body>
-<section>
+
+<div class="container">
+    <a href="index.html" class="back-btn">← Назад к Гагарину</a>
+
+    <section>
         <h2>Космические первопроходцы</h2>
         <p>Кроме знаменитых Белки и Стрелки, в космосе побывало немало других отважных путешественников.</p>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 20px;">
-            
+        <div class="grid">
             <!-- Карточка: Лайка -->
-            <div style="background: rgba(255,255,255,0.08); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
-                <div style="height: 150px; background: #222 url('https://avatars.mds.yandex.net/i?id=1bfaafb01b6b6d23366e53f749cbe422a3633190-16507317-images-thumbs&n=13') no-repeat center center/cover; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.8rem;">[Фото Лайки]</div>
-                <div style="padding: 15px;">
-                    <strong style="color: #ffcc00; display: block; margin-bottom: 5px;">Собака Лайка</strong>
-                    <span style="font-size: 0.9rem;">Первое живое существо, оказавшееся на орбите Земли. Она проложила путь для будущих полетов человека.</span>
+            <div class="card">
+                <div class="card-img" style="background-image: url('ССЫЛКА_НА_ФОТО')"></div>
+                <div class="card-content">
+                    <span class="card-title">Собака Лайка</span>
+                    <p style="font-size: 0.9rem; margin: 0;">Первое живое существо на орбите Земли. Она проложила путь для будущих полетов человека.</p>
                 </div>
             </div>
 
             <!-- Карточка: Мисс Бейкер -->
-            <div style="background: rgba(255,255,255,0.08); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
-                <div style="height: 150px; background: #222 url('https://avatars.mds.yandex.net/i?id=9e65d81e446f71072ae08b6db2a650f91fe11d5a-11959565-images-thumbs&n=13') no-repeat center center/cover; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.8rem;">[Фото обезьянки]</div>
-                <div style="padding: 15px;">
-                    <strong style="color: #ffcc00; display: block; margin-bottom: 5px;">Обезьяна Бейкер</strong>
-                    <span style="font-size: 0.9rem;">Маленькая беличья обезьянка, которая благополучно вернулась из суборбитального полета.</span>
+            <div class="card">
+                <div class="card-img" style="background-image: url('ССЫЛКА_НА_ФОТО')"></div>
+                <div class="card-content">
+                    <span class="card-title">Обезьяна Бейкер</span>
+                    <p style="font-size: 0.9rem; margin: 0;">Маленькая беличья обезьянка, которая благополучно вернулась из суборбитального полета.</p>
                 </div>
             </div>
 
             <!-- Карточка: Фелисетт -->
-            <div style="background: rgba(255,255,255,0.08); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
-                <div style="height: 150px; background: #222 url('https://avatars.mds.yandex.net/get-entity_search/5107294/1247631528/SUx182_2x') no-repeat center center/cover; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.8rem;">[Фото Фелисетт]</div>
-                <div style="padding: 15px;">
-                    <strong style="color: #ffcc00; display: block; margin-bottom: 5px;">Кошка Фелисетт</strong>
-                    <span style="font-size: 0.9rem;">Единственная в истории кошка-астронавт, которая успешно совершила полет и мягкую посадку.</span>
+            <div class="card">
+                <div class="card-img" style="background-image: url('ССЫЛКА_НА_ФОТО')"></div>
+                <div class="card-content">
+                    <span class="card-title">Кошка Фелисетт</span>
+                    <p style="font-size: 0.9rem; margin: 0;">Единственная в истории кошка-астронавт, которая успешно совершила полет.</p>
                 </div>
             </div>
 
             <!-- Карточка: Черепахи -->
-            <div style="background: rgba(255,255,255,0.08); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
-                <div style="height: 150px; background: #222 url('ССЫЛКА_НА_ФОТО_ЧЕРЕПАХ') no-repeat center center/cover; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.8rem;">[Фото черепах]</div>
-                <div style="padding: 15px;">
-                    <strong style="color: #ffcc00; display: block; margin-bottom: 5px;">Лунные черепахи</strong>
-                    <span style="font-size: 0.9rem;">Первые существа, совершившие путешествие вокруг Луны и вернувшиеся на Землю живыми.</span>
+            <div class="card">
+                <div class="card-img" style="background-image: url('ССЫЛКА_НА_ФОТО')"></div>
+                <div class="card-content">
+                    <span class="card-title">Лунные черепахи</span>
+                    <p style="font-size: 0.9rem; margin: 0;">Первые существа, совершившие путешествие вокруг Луны и вернувшиеся живыми.</p>
                 </div>
             </div>
-
         </div>
     </section>
+</div>
+
+</body>
+</html>
