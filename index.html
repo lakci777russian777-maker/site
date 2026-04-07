@@ -5,132 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Юрий Гагарин: От мечты до триумфа</title>
     <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%);
-            color: #e0e0e0;
-            line-height: 1.6;
-        }
-        header {
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: url('https://unsplash.com') no-repeat center center/cover;
-            box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5);
-        }
-        h1 {
-            font-size: clamp(2rem, 8vw, 4rem);
-            margin: 0;
-            color: #00d4ff;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            text-shadow: 0 0 20px rgba(0,212,255,0.7);
-            padding: 0 20px;
-        }
-        .container {
-            max-width: 900px;
-            margin: -50px auto 50px;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 40px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.1);
-        }
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%); color: #e0e0e0; line-height: 1.6; }
+        header { height: 50vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: url('https://unsplash.com') no-repeat center center/cover; box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5); }
+        h1 { font-size: clamp(2rem, 8vw, 4rem); margin: 0; color: #00d4ff; text-transform: uppercase; letter-spacing: 5px; text-shadow: 0 0 20px rgba(0,212,255,0.7); }
+        .container { max-width: 1000px; margin: -50px auto 50px; background: rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 15px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
         h2 { color: #00d4ff; border-bottom: 2px solid #00d4ff; padding-bottom: 10px; margin-top: 40px; }
-        .quote {
-            font-style: italic;
-            border-left: 4px solid #00d4ff;
-            padding-left: 20px;
-            margin: 20px 0;
-            color: #b0e0e6;
-        }
-        
-        /* Стили Хаба */
-        .hub-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .hub-card {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 20px;
-            border-radius: 15px;
-            border: 1px solid rgba(255,255,255,0.1);
-            text-align: center;
-            transition: 0.3s;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-        .hub-card:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: #00d4ff;
-            transform: translateY(-5px);
-        }
-        .hub-card h3 { margin: 0 0 10px 0; color: #ffcc00; }
-        .current { border-color: #00d4ff; background: rgba(0, 212, 255, 0.1); cursor: default; }
-        .current:hover { transform: none; }
-
-        footer { text-align: center; padding: 40px; font-size: 0.9rem; color: #666; border-top: 1px solid rgba(255,255,255,0.1); }
+        .quote { font-style: italic; border-left: 4px solid #00d4ff; padding-left: 20px; margin: 20px 0; color: #b0e0e6; }
+        .hub-link { text-decoration: none; color: white; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; border: 1px solid rgba(0,212,255,0.3); text-align: center; transition: 0.3s; display: block; }
+        .hub-link:hover { background: rgba(0,212,255,0.1); transform: translateY(-3px); }
     </style>
 </head>
 <body>
-
 <header>
     <h1>От мечты до триумфа</h1>
     <p>История первого человека в космосе</p>
 </header>
-
 <div class="container">
     <section>
         <h2>Первый среди звезд</h2>
-        <p>12 апреля 1961 года мир замер. С космодрома Байконур стартовал корабль «Восток-1», на борту которого находился советский летчик Юрий Алексеевич Гагарин. Эти 108 минут навсегда изменили историю человечества.</p>
-        
+        <p>12 апреля 1961 года мир замер. С космодрома Байконур стартовал корабль «Восток-1», на борту которого находился советский летчик Юрий Алексеевич Гагарин. Его легендарное «Поехали!» открыло новую главу в истории цивилизации. Эти 108 минут полета доказали, что человек способен не только покинуть пределы атмосферы, но и безопасно вернуться на Землю.</p>
         <div class="quote">
             «Облетев Землю в корабле-спутнике, я увидел, как прекрасна наша планета. Люди, будем хранить и приумножать эту красоту, а не разрушать её!» — Юрий Гагарин.
         </div>
     </section>
 
-    <section>
-        <h2>Путь к подвигу</h2>
-        <p>Юрий родился в простой крестьянской семье. Его путь к звездам лежал через ремесленное училище, индустриальный техникум и аэроклуб. Огромное трудолюбие и железная воля помогли ему пройти строжайший отбор в первый отряд космонавтов.</p>
-    </section>
-
-    <!-- РАЗДЕЛ ХАБА (МЕНЮ) -->
-    <section style="margin-top: 60px;">
-        <h2 style="text-align: center; border: none;">Исследуйте проект</h2>
-        <div class="hub-grid">
-            
-            <div class="hub-card current">
-                <h3>Юрий Гагарин</h3>
-                <p style="font-size: 0.9rem;">Биография и полет первого космонавта.</p>
-                <span style="font-size: 0.8rem; opacity: 0.6;">Вы здесь</span>
-            </div>
-
-            <a href="animals.html" class="hub-card">
-                <h3>Животные-герои</h3>
-                <p style="font-size: 0.9rem;">Кто проложил дорогу к звездам до человека.</p>
-                <span style="color: #00d4ff;">Перейти →</span>
-            </a>
-
-            <a href="korolev.html" class="hub-card">
-                <h3>С. П. Королёв</h3>
-                <p style="font-size: 0.9rem;">Главный конструктор и его секретные победы.</p>
-                <span style="color: #00d4ff;">Перейти →</span>
-            </a>
-
+    <!-- ФИНАЛЬНЫЙ ХАБ -->
+    <section style="margin-top: 80px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1);">
+        <h2 style="text-align: center; border: none; margin-bottom: 30px;">Навигация по проекту</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+            <a href="index.html" class="hub-link" style="background: rgba(0,212,255,0.1); border-color: #00d4ff;"><b>Юрий Гагарин</b><br><small>Вы здесь</small></a>
+            <a href="animals.html" class="hub-link"><b>Животные-герои</b><br><small>Путь к звездам</small></a>
+            <a href="korolev.html" class="hub-link"><b>С. П. Королёв</b><br><small>Конструктор</small></a>
+            <a href="tereshkova.html" class="hub-link"><b>В. Терешкова</b><br><small>Первая женщина</small></a>
+            <a href="leonov.html" class="hub-link"><b>Алексей Леонов</b><br><small>Выход в космос</small></a>
+            <a href="mks.html" class="hub-link"><b>Станция МКС</b><br><small>Жизнь на орбите</small></a>
         </div>
     </section>
 </div>
-
-<footer>
-    © 2026 Школьный проект ко Дню космонавтики
-</footer>
-
 </body>
 </html>
