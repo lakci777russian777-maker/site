@@ -10,9 +10,10 @@
         h1 { font-size: clamp(2rem, 8vw, 4rem); margin: 0; color: #00d4ff; text-transform: uppercase; letter-spacing: 5px; text-shadow: 0 0 20px rgba(0,212,255,0.7); }
         .container { max-width: 1000px; margin: -50px auto 50px; background: rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 15px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
         h2 { color: #00d4ff; border-bottom: 2px solid #00d4ff; padding-bottom: 10px; margin-top: 40px; }
+        .info-block { background: rgba(255,255,255,0.03); padding: 25px; border-radius: 15px; margin: 20px 0; border-left: 4px solid #00d4ff; }
         .quote { font-style: italic; border-left: 4px solid #00d4ff; padding-left: 20px; margin: 20px 0; color: #b0e0e6; }
-        .hub-link { text-decoration: none; color: white; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; border: 1px solid rgba(0,212,255,0.3); text-align: center; transition: 0.3s; display: block; }
-        .hub-link:hover { background: rgba(0,212,255,0.1); transform: translateY(-3px); }
+        .hub-link { text-decoration: none; color: white; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; border: 1px solid rgba(0,212,255,0.3); text-align: center; transition: 0.3s; display: block; font-size: 0.9rem; }
+        .hub-link:hover { background: rgba(0,212,255,0.1); transform: translateY(-3px); border-color: #00d4ff; }
     </style>
 </head>
 <body>
@@ -21,18 +22,31 @@
     <p>История первого человека в космосе</p>
 </header>
 <div class="container">
+    
     <section>
-        <h2>Первый среди звезд</h2>
-        <p>12 апреля 1961 года мир замер. С космодрома Байконур стартовал корабль «Восток-1», на борту которого находился советский летчик Юрий Алексеевич Гагарин. Его легендарное «Поехали!» открыло новую главу в истории цивилизации. Эти 108 минут полета доказали, что человек способен не только покинуть пределы атмосферы, но и безопасно вернуться на Землю.</p>
+        <h2>108 минут, изменивших мир</h2>
+        <div class="info-block">
+            <p>12 апреля 1961 года в 09:07 по московскому времени с космодрома Байконур стартовал корабль «Восток-1». На его борту находился 27-летний старший лейтенант <b>Юрий Алексеевич Гагарин</b>. Его знаменитое «Поехали!» в момент старта стало символом бесстрашия и готовности человечества шагнуть в неизвестность.</p>
+            <p>Полет проходил в автоматическом режиме: ученые того времени еще не были уверены, сможет ли человек сохранить работоспособность в условиях невесомости. Гагарин провел на орбите 108 минут, совершив один полный виток вокруг планеты. За это время он вел наблюдения, записывал свои ощущения на магнитофон и даже успел перекусить, доказав, что жизнь и работа в космосе возможны.</p>
+        </div>
+        
         <div class="quote">
             «Облетев Землю в корабле-спутнике, я увидел, как прекрасна наша планета. Люди, будем хранить и приумножать эту красоту, а не разрушать её!» — Юрий Гагарин.
         </div>
     </section>
 
+    <section>
+        <h2>Путь к звездам</h2>
+        <div class="info-block">
+            <p>Выбор Гагарина из сотен претендентов не был случайным. Помимо отличного здоровья и физической подготовки, он обладал железной выдержкой и открытым, дружелюбным характером. Будущий космонавт прошел через изнурительные тренировки в центрифуге, барокамере и испытания в сурдокамере — полной тишине и одиночестве.</p>
+            <p>После возвращения на Землю Гагарин стал самым знаменитым человеком на планете. Его «Миссия мира» охватила десятки стран: короли, президенты и миллионы простых людей мечтали увидеть его знаменитую улыбку. Юрий Алексеевич стал символом не только технического прогресса, но и надежды на мирное сосуществование всех народов.</p>
+        </div>
+    </section>
+
     <!-- ФИНАЛЬНЫЙ ХАБ -->
     <section style="margin-top: 80px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1);">
-        <h2 style="text-align: center; border: none; margin-bottom: 30px;">Навигация по проекту</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+        <h2 style="text-align: center; border: none; margin-bottom: 30px;">Исследуйте другие темы проекта</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px;">
             <a href="index.html" class="hub-link" style="background: rgba(0,212,255,0.1); border-color: #00d4ff;"><b>Юрий Гагарин</b><br><small>Вы здесь</small></a>
             <a href="animals.html" class="hub-link"><b>Животные-герои</b><br><small>Путь к звездам</small></a>
             <a href="korolev.html" class="hub-link"><b>С. П. Королёв</b><br><small>Конструктор</small></a>
@@ -42,5 +56,11 @@
         </div>
     </section>
 </div>
+
+<footer style="text-align: center; padding: 20px; font-size: 0.9rem; color: #666;">
+    © 2024 Школьный проект ко Дню космонавтики
+</footer>
+
 </body>
 </html>
+
